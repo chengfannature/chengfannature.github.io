@@ -3,8 +3,6 @@ layout: post
 title: vncserver 配置
 ---
 
-# **vncserver**配置
-
 
 标签（空格分隔）： vnc
 

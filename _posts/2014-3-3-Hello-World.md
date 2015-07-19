@@ -1,9 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: 第一篇博客
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+2015.7.18，第一次用git pages 写自己的博客。
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 

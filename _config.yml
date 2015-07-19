@@ -54,6 +54,17 @@ baseurl: ""
 #
 
 markdown: redcarpet
+#kramdown:
+#  input: GFM
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
+#  use_coderay: true
+#  syntax_highlighter: rouge
+#  coderay:
+#    coderay_line_numbers: nil
+
 highlighter: pygments
 permalink: /:title/
 

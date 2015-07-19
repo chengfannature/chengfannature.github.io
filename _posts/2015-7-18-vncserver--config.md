@@ -12,7 +12,9 @@ linux下vncserver的配置文件都位于`~/.vnc/xstartup`.但是，系统默认
 
 ##桌面环境为GNOME的vncserver配置
 将xstartup修改为如下配置并保存。
-```shell
+
+~~~ 
+
 linux-4gwx:~ # cat ~/.vnc/xstartup 
 #!/bin/sh
 
@@ -21,11 +23,13 @@ xsetroot -solid grey
 xterm -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
 #twm &
 gnome-session &
-```
+~~~
+
 保存完毕后重启vncserver即可。
 ##桌面环境为LXDE的vncserver配置
 将xstartup修改为如下配置并保存。
-```shell
+
+~~~ 
 linux-4gwx:~ # cat ~/.vnc/xstartup 
 # Uncomment the following two lines for normal desktop:
 # unset SESSION_MANAGER
@@ -38,7 +42,8 @@ vncconfig -iconic &
 x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
 #x-window-manager &
 lxterminal & /usr/bin/lxsession -s LXDE &
-```
+~~~
+
 ##重启vncserver
 如果已经启动了vncserver，需要先关闭对应的启动端口，然后再启动，设置才会生效。
  1. 关闭vncserver `vncserver -kill :1`
